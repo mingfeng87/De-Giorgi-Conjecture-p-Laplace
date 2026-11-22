@@ -1,6 +1,6 @@
 # De Giorgi Conjecture for the p-Laplace Equation
 
-This repository hosts AI-assisted research manuscripts on the De Giorgi conjecture for the p-Laplace equation $$-\Delta_p u = u(1-u^2)^{p-1}$$. Together the drafts address one-dimensional symmetry in dimension seven and eight for different ranges of $$p$$, construct nonplanar monotone entire solutions in dimension nine for every $$p>1$$, and produce nonplanar entire minimizers in dimension eight for every $$1<p<\infty$$. They complement the classical $$p=2$$ Allen–Cahn theory and illustrate how the exponent $$p$$ affects both the positive symmetry results and the counterexamples.
+This repository hosts AI-assisted research manuscripts on the De Giorgi conjecture for the p-Laplace equation $$-\Delta_p u = u(1-u^2)^{p-1}$$. Together the drafts address one-dimensional symmetry in dimension seven and eight for different ranges of $$p$$, construct nonplanar monotone entire solutions in dimension nine for every $$p>1$$, and produce nonplanar entire minimizers in dimension eight for every $$1<p<\infty$$. They complement the classical $$p=2$$ Allen–Cahn theory and illustrate how the exponent $$p$$ affects both the positive symmetry results and the counterexamples. The sixth manuscript is a companion classical Allen–Cahn result: it proves that finite Morse index entire solutions in every dimension $N \ge 1$ have energy growth at most $C_u R^{N-1}$, sharpened by the planar interface, and supplies the energy-growth input for rigidity and classification arguments across dimensions.
 
 **Draft status:** All manuscripts present candidate proofs. The team is continuing to verify every argument. The summaries below describe the statements and proofs as currently drafted.
 
@@ -78,6 +78,20 @@ For every fixed $$1<p<\infty$$, the manuscript constructs a bounded entire globa
 
 * * *
 
+### 6. Optimal energy growth of finite Morse index solutions to the Allen–Cahn equation in all dimensions
+
+**[Read the PDF](https://github.com/mingfeng87/De-Giorgi-Conjecture-p-Laplace/blob/main/stable_allen_cahn_all_dimensions.pdf)**
+
+| Detail | Value |
+|---|---|
+| **Dimension** | All $N \ge 1$ |
+| **Range** | Finite Morse index, classical Allen–Cahn equation |
+| **Length** | 176 pages |
+
+The manuscript proves that every bounded entire classical solution of $\Delta u = u^3 - u$ in $\mathbb{R}^N$ with finite Morse index satisfies $E_u(B_R(x_c)) \le C_u R^{N-1}$ for every $x_c \in \mathbb{R}^N$ and $R > 0$, where $C_u$ depends only on $u$ and $N$ (Theorem 1.1). The exponent $N-1$ is optimal and is attained by the one-dimensional planar interface $u(x) = \tanh(x_N/\sqrt{2})$. For $N \le 9$ the result follows from a direct generalization of the method of OpenAI, while the main contribution is the case $N > 9$, which requires new ideas. The proof proceeds through phase estimates and zero separation on transverse lines, reach and relative estimates for the phase defect, a quadratic surface moment, turning-face and column identities, geometric cutoffs on transverse windows, radial and angular comparisons, a lower bound in an observation ball, and a passage to the limit. Separate sections treat exterior stability in dimensions ten and higher, quadratic energy growth in dimension three, and the final assembly in every dimension. The draft status note states that the candidate proof was obtained on November 21, 2026, through extensive dialogue-based training with AI, and the manuscript was revised on November 22, 2026; it is currently under verification.
+
+* * *
+
 ## Citing a manuscript
 
 Use the full manuscript title and the date printed in the PDF, use M. Zhao et al. as the author of PDF files. Include the
@@ -97,6 +111,7 @@ so that the cited draft can be identified after revisions.
 | [`p_laplace_degiorgi_counterexample_all_p.pdf`](https://github.com/mingfeng87/De-Giorgi-Conjecture-p-Laplace/blob/main/p_laplace_degiorgi_counterexample_all_p.pdf) | Dimension 9, every $$p>1$$, nonplanar monotone solutions |
 | [`p_laplace_degiorgi_p_greater_than_two.pdf`](https://github.com/mingfeng87/De-Giorgi-Conjecture-p-Laplace/blob/main/p_laplace_degiorgi_p_greater_than_two.pdf) | Dimension 7 core, final range $$N \le 8$$, $$p>2$$, symmetry |
 | [`p_laplace_nonplanar_minimizers_all_p.pdf`](https://github.com/mingfeng87/De-Giorgi-Conjecture-p-Laplace/blob/main/p_laplace_nonplanar_minimizers_all_p.pdf) | Dimension 8, every $$1<p<\infty$$, nonplanar minimizers |
+| [`stable_allen_cahn_all_dimensions.pdf`](https://github.com/mingfeng87/De-Giorgi-Conjecture-p-Laplace/blob/main/stable_allen_cahn_all_dimensions.pdf) | All dimensions $N \ge 1$, finite Morse index, optimal energy growth |
 
 * * *
 
